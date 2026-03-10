@@ -1,0 +1,491 @@
+{
+  "bookings": [
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double"
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "name": "RELIANCE DIGITAL INDIA.",
+      "roomtype": "Premium Single",
+      "number": "7",
+      "address": "MUMBAI, RAIPUR ,SURAR, KOLKATA",
+      "id": "39"
+    },
+    {
+      "id": "38",
+      "name": "ICICI PRUDENTIAL LIFE INSURENCE.",
+      "address": "AT MUMBAI , UP , MP, ",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "35",
+      "name": "SANSUI INDIA LIMITED.",
+      "address": "PUNE CHAKKAN MIDC",
+      "number": "8",
+      "roomtype": "Premium Single"
+    },
+    {
+      "id": "34",
+      "name": "TATA GROUP LIMITED.",
+      "address": "AT. BARAMATI PUNE MAHARASTRA.",
+      "number": "5",
+      "roomtype": "Standard Single"
+    },
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double"
+    },
+    {
+      "name": "RICOPrinting And Packaging LIMITED.",
+      "roomtype": "Silver Double",
+      "number": "6",
+      "address": "AT MULUND MUMBAI.",
+      "id": "32"
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "name": "RELIANCE DIGITAL INDIA.",
+      "roomtype": "Premium Single",
+      "number": "7",
+      "address": "MUMBAI, RAIPUR ,SURAR, KOLKATA",
+      "id": "39"
+    },
+    {
+      "id": "38",
+      "name": "ICICI PRUDENTIAL LIFE INSURENCE.",
+      "address": "AT MUMBAI , UP , MP, ",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "35",
+      "name": "SANSUI INDIA LIMITED.",
+      "address": "PUNE CHAKKAN MIDC",
+      "number": "8",
+      "roomtype": "Premium Single"
+    },
+    {
+      "id": "34",
+      "name": "TATA GROUP LIMITED.",
+      "address": "AT. BARAMATI PUNE MAHARASTRA.",
+      "number": "5",
+      "roomtype": "Standard Single"
+    },
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double"
+    },
+    {
+      "name": "RICOPrinting And Packaging LIMITED.",
+      "roomtype": "Silver Double",
+      "number": "6",
+      "address": "AT MULUND MUMBAI.",
+      "id": "32"
+    },
+    {
+      "id": "31",
+      "name": "Global GuarsikWadi",
+      "address": "NEWYORK AMERICA",
+      "number": "5",
+      "roomtype": "Premium Double"
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "name": "RELIANCE DIGITAL INDIA.",
+      "roomtype": "Premium Single",
+      "number": "7",
+      "address": "MUMBAI, RAIPUR ,SURAR, KOLKATA",
+      "id": "39"
+    },
+    {
+      "id": "38",
+      "name": "ICICI PRUDENTIAL LIFE INSURENCE.",
+      "address": "AT MUMBAI , UP , MP, ",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "35",
+      "name": "SANSUI INDIA LIMITED.",
+      "address": "PUNE CHAKKAN MIDC",
+      "number": "8",
+      "roomtype": "Premium Single"
+    },
+    {
+      "id": "34",
+      "name": "TATA GROUP LIMITED.",
+      "address": "AT. BARAMATI PUNE MAHARASTRA.",
+      "number": "5",
+      "roomtype": "Standard Single"
+    },
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double"
+    },
+    {
+      "name": "RICOPrinting And Packaging LIMITED.",
+      "roomtype": "Silver Double",
+      "number": "6",
+      "address": "AT MULUND MUMBAI.",
+      "id": "32"
+    },
+    {
+      "id": "31",
+      "name": "Global GuarsikWadi",
+      "address": "NEWYORK AMERICA",
+      "number": "5",
+      "roomtype": "Premium Double"
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "name": "RELIANCE DIGITAL INDIA.",
+      "roomtype": "Premium Single",
+      "number": "7",
+      "address": "MUMBAI, RAIPUR ,SURAR, KOLKATA",
+      "id": "39"
+    },
+    {
+      "id": "38",
+      "name": "ICICI PRUDENTIAL LIFE INSURENCE.",
+      "address": "AT MUMBAI , UP , MP, ",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "35",
+      "name": "SANSUI INDIA LIMITED.",
+      "address": "PUNE CHAKKAN MIDC",
+      "number": "8",
+      "roomtype": "Premium Single"
+    },
+    {
+      "id": "34",
+      "name": "TATA GROUP LIMITED.",
+      "address": "AT. BARAMATI PUNE MAHARASTRA.",
+      "number": "5",
+      "roomtype": "Standard Single"
+    },
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double"
+    },
+    {
+      "name": "RICOPrinting And Packaging LIMITED.",
+      "roomtype": "Silver Double",
+      "number": "6",
+      "address": "AT MULUND MUMBAI.",
+      "id": "32"
+    },
+    {
+      "id": "31",
+      "name": "Global GuarsikWadi",
+      "address": "NEWYORK AMERICA",
+      "number": "5",
+      "roomtype": "Premium Double"
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "29",
+      "name": "ZIndal LIMITED",
+      "address": "AT NASHIK SINNAR MIDC ",
+      "number": "4",
+      "roomtype": "Deluxe Room"
+    },
+    {
+      "name": "RELIANCE DIGITAL INDIA.",
+      "roomtype": "Premium Single",
+      "number": "7",
+      "address": "MUMBAI, RAIPUR ,SURAR, KOLKATA",
+      "id": "39"
+    },
+    {
+      "id": "38",
+      "name": "ICICI PRUDENTIAL LIFE INSURENCE.",
+      "address": "AT MUMBAI , UP , MP, ",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "35",
+      "name": "SANSUI INDIA LIMITED.",
+      "address": "PUNE CHAKKAN MIDC",
+      "number": "8",
+      "roomtype": "Premium Single"
+    },
+    {
+      "id": "34",
+      "name": "TATA GROUP LIMITED.",
+      "address": "AT. BARAMATI PUNE MAHARASTRA.",
+      "number": "5",
+      "roomtype": "Standard Single"
+    },
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double"
+    },
+    {
+      "name": "RICOPrinting And Packaging LIMITED.",
+      "roomtype": "Silver Double",
+      "number": "6",
+      "address": "AT MULUND MUMBAI.",
+      "id": "32"
+    },
+    {
+      "id": "31",
+      "name": "Global GuarsikWadi",
+      "address": "NEWYORK AMERICA",
+      "number": "5",
+      "roomtype": "Premium Double"
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room"
+    },
+    {
+      "id": "29",
+      "name": "ZIndal LIMITED",
+      "address": "AT NASHIK SINNAR MIDC ",
+      "number": "4",
+      "roomtype": "Deluxe Room"
+    },
+    {
+      "id": "29",
+      "name": "APPOLLO Tyres",
+      "address": "AT AMBAD MIDC NASHIK SATPur",
+      "number": "5",
+      "roomtype": "Standard Single"
+    },
+    {
+      "id": "8788",
+      "name": "RELIANCE DIGITAL INDIA",
+      "address": "DMO",
+      "number": "2",
+      "roomtype": "Family Room",
+      "checkin": "2026-03-19T21:27",
+      "checkout": "2026-03-24T20:26"
+    },
+    {
+      "id": "963",
+      "name": "AdminRegistration",
+      "address": "Ghatkoper West Mumbai",
+      "number": "3",
+      "roomtype": "Premium Double",
+      "checkin": "2026-03-25T02:41",
+      "checkout": "2026-03-21T03:42"
+    },
+    {
+      "id": "22",
+      "name": "Telicaom INDIA PRivate Limited.",
+      "address": "Ghatkoper West Mumbai",
+      "number": "5",
+      "roomtype": "Premium Double",
+      "checkin": "2026-03-20T02:02",
+      "checkout": "2026-03-30T04:07"
+    },
+    {
+      "id": "101",
+      "name": "JIo Primium",
+      "address": "Pune",
+      "number": "7",
+      "roomtype": "Standard Double",
+      "checkin": "2026-01-31T23:59",
+      "checkout": "2024-12-03T23:59"
+    },
+    {
+      "id": "396",
+      "name": "Mango Slice pvt Ltd.",
+      "address": "GateWay Of India",
+      "number": "4",
+      "roomtype": "Premium Single",
+      "checkin": "2025-01-31T23:58",
+      "checkout": "2025-11-30T01:59"
+    },
+    {
+      "id": "46",
+      "name": "Nancy",
+      "address": "Ghatkoper West Mumbai",
+      "number": "3",
+      "roomtype": "Family Room",
+      "checkin": "2026-03-19T20:31",
+      "checkout": "2026-04-16T20:32"
+    },
+    {
+      "id": "77",
+      "name": "Priyanka Sandip kadam",
+      "address": "At Pune",
+      "number": "8",
+      "roomtype": "Standard Single",
+      "checkin": "0045-07-12T02:02",
+      "checkout": "51021-05-25T23:05"
+    },
+    {
+      "id": "101",
+      "name": "demo demo demo",
+      "address": "addresss",
+      "number": "3",
+      "roomtype": "Standard Single",
+      "checkin": "2026-04-04T04:59",
+      "checkout": "2026-12-01T22:59"
+    }
+  ],
+  "roomtype": [
+    {
+      "email": "bob@example.com",
+      "imageUrl": "assets/img/room1.jpg",
+      "id": "b13f"
+    },
+    {
+      "email": "praiyanka@example.com",
+      "imageUrl": "./assets/img/room1.jpg",
+      "id": "28fa"
+    },
+    {
+      "email": "shlok@example.com",
+      "imageUrl": "./assets/img/room1.jpg",
+      "id": "e9bf"
+    },
+    {
+      "email": "bob@example.com",
+      "imageUrl": "./assets/img/room1.jpg",
+      "id": "7ef3"
+    },
+    {
+      "email": "gaurav@example.com",
+      "imageUrl": "./assets/img/room1.jpg",
+      "id": "ba1d"
+    },
+    {
+      "email": "devansh@example.com",
+      "imageUrl": "./assets/img/room1.jpg",
+      "id": "e3c2"
+    },
+    {
+      "email": "sunita@example.com",
+      "imageUrl": "./assets/img/room1.jpg",
+      "id": "81f2"
+    }
+  ],
+  "billing": [
+    {
+      "id": 7,
+      "name": "7",
+      "address": "7",
+      "number": 4,
+      "roomtype": "4",
+      "checkin": "4",
+      "checkout": "4",
+      "ratepernight": 4,
+      "addcharges": 4,
+      "nights": 4,
+      "totalamount": 20
+    },
+    {
+      "id": "33",
+      "name": "ZEncore India Privated Limited.",
+      "address": "At GOREGaon Mumbai.",
+      "number": "1",
+      "roomtype": "Standard Double",
+      "checkin": "2026-03-19T20:31",
+      "checkout": "51021-05-25T23:05",
+      "ratepernight": 7,
+      "addcharges": 88,
+      "nights": 7,
+      "totalamount": 137
+    },
+    {
+      "id": "30",
+      "name": "Apex Rubber Private Limited",
+      "address": "AT Bandra Kurla Complex",
+      "number": "7",
+      "roomtype": "Suite Room",
+      "checkin": "2026-03-19T20:31",
+      "checkout": "2026-12-01T22:59",
+      "ratepernight": 2,
+      "addcharges": 1,
+      "nights": 4,
+      "invoicedate": "2026-03-06T12:24:41.414Z",
+      "totalamount": 9
+    },
+    {
+      "id": 46,
+      "name": "demo",
+      "address": "Ghatkoper West Mumbai",
+      "number": 5,
+      "roomtype": "Standard Double",
+      "checkin": "0045-07-12T02:02",
+      "checkout": "1998-12-23",
+      "ratepernight": 6,
+      "addcharges": 6,
+      "nights": 6,
+      "invoicedate": "2026-03-06T12:33:14.666Z",
+      "totalamount": 42
+    },
+    {
+      "id": "101",
+      "name": "demo demo demo",
+      "address": "addresss",
+      "number": "3",
+      "roomtype": "Standard Single",
+      "checkin": "2026-04-04T04:59",
+      "checkout": "2026-12-01T22:59",
+      "ratepernight": 4,
+      "addcharges": 4,
+      "nights": 7,
+      "invoicedate": "2026-03-06T12:34:30.734Z",
+      "totalamount": 32
+    }
+  ]
+}

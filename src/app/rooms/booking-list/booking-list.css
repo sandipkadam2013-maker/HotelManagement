@@ -1,0 +1,148 @@
+.booking_wrapper{ 
+      display:flex; 
+      align-items:center;
+      border:  1px solid #ddd; 
+      background: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px; 
+      margin: 0 auto; 
+      padding: 10px; 
+      margin-top: 2rem;
+      justify-content: space-between;
+      position:relative;
+    }
+   .btnclose{
+    position: absolute;
+    right: 14px;
+    top: 11px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  } 
+  .edit{position: absolute;
+    right: 49px;
+    top: 9px;}
+    .edit:hover{color: #fff !important;}
+ul li{list-style: none;}
+.title-name{ 
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 26px;
+   }
+  H5{    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 160px;
+    text-align: center;
+    margin: auto;
+    white-space: nowrap;
+    padding-bottom: 13px;}
+ H5::before{
+  background-color: #c50000;
+    content:'';
+    display:block;
+    height:3px;
+    width:100px;
+    margin-bottom:5px;
+  }   
+
+h5::after{
+    background-color: #c50000;
+    content: "";
+    display: block;
+    position: relative;
+    left: 141px;
+    bottom: -3px;
+    height: 3px;
+    width: 100px;
+}
+.id-name{ font-size: x-small;}
+.number-title{ 
+    font-size: 13px;
+    color: #232723;
+    margin-bottom: 0.1rem;
+    }
+.title-path{ 
+    font-style: italic; 
+    font-size:14px;
+}
+.titlename{
+    font-size:20px; 
+    text-align:center;
+    position:relative;
+     margin:4rem;
+    }
+.booking_profile{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; }
+.booking_content{width: auto;}
+  .booking_content p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 350px;
+ }
+.room-flag {
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+.deluxe {
+  background-color: #d4af37; /* gold */
+}
+.suite {
+  background-color: #4caf50; /* green */
+  color: #fff !important;
+}
+.standard {
+  background-color: #2196f3; /* blue */
+}
+.deluxe{background-color: red; color: #fff; border-radius: 10px;}
+.suite{ background-color: #d4af37;color: #fff; border-radius: 10px;}
+.standardsingle{background-color: darkgray; color: #fff; border-radius: 10px;}
+.standard{ background-color: aqua; color: #000; border-radius: 10px;}
+.premiumsingle{background-color: rgb(255, 0, 0); color: #fff; border-radius: 10px;}
+.silver{background-color: rgb(16, 255, 235); color: #111010; border-radius: 10px;}
+.premium{background-color: rgb(51, 122, 228); color: #fff; border-radius: 10px;}
+.family{background-color: rgb(225, 204, 15); color: #fff; border-radius: 10px;}
+.deluxe{background-color: rgb(206, 82, 162); color: #fff; border-radius: 10px;}
+.loader-container {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.loader{
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e0e0e0;      /* light gray border */
+  border-top: 4px solid #3498db;  /* blue color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin:20px auto;
+}
+
+@keyframes spin{
+
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+.cnetrtextalign{ display: flex; align-items: center; justify-content: center;}
+.client_name{color: #ff6138 !important}
+.modal-header{ border-bottom: 0 !important;}
+.modal-footer{ border-top: 0 !important; margin-bottom:0.444rem; }
+.modal-body{ padding-top: 0; padding-bottom: 0;}
+
+

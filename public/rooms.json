@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "Title":"Standard Single",
+      "image":"assets/img/room1.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    },
+    {
+      "Title": "Standard Double",
+      "image":"assets/img/room2.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    },
+    {
+      "Title": "Premium Single",
+      "image": "assets/img/room3.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    },
+    {
+      "Title": "Silver Double",
+      "image": "assets/img/room4.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    },
+    {
+      "Title": "Premium Double",
+      "image": "assets/img/room5.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    },
+    {
+      "Title": "Family Room",
+      "image":"assets/img/room6.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    },
+    {
+      "Title": "Suite Room",
+      "image": "assets/img/room3.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    }
+    ,
+    {
+      "Title": "Deluxe Room",
+      "image": "assets/img/room1.jpg",
+      "description":" Perfect for traveling couples",
+       "price":"$99"
+    }
+  ]
+}

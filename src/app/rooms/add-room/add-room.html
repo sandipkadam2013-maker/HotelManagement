@@ -1,0 +1,78 @@
+<div class="addroom-wrapper"> 
+
+<div class="container"> 
+  <div class="row mt-4">  
+    <!-- <div class="col-md-6">   
+   <div class="bg_image">
+
+   
+   </div>    
+
+
+</div> -->
+
+<div class="roomcenter"> 
+ <div class="addroom-wrapper"> 
+
+  <form [formGroup]="roombooking" (ngSubmit)="onsubmit()">
+
+  <label>Booking ID <i>*</i></label>
+  <input type="number" name="id" class="form-control" formControlName="id">
+
+ <label>Name <i>*</i></label>
+ <input type="text" name="name" class="form-control" formControlName="name">
+
+ <label>Check In<i>*</i></label>
+ <input type="datetime-local" name="checkin" class="form-control" formControlName="checkin">
+
+ <label>Check out <i>*</i></label>  
+ <input type="datetime-local" name="checkout" class="form-control" formControlName="checkout">
+
+ <label>Address <i>*</i></label>
+
+ <input type="text" name="address" class="form-control" formControlName="address">
+
+ <label>Number of person <i>*</i></label>
+ <select class="form-select" formControlName="number" aria-label="Default select example">
+    <option selected> Number Of Person </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+    <option value="4"> 4 </option>
+    <option value="5"> 5 </option>
+    <option value="6"> 6 </option>
+    <option value="7"> 7 </option>
+    <option value="8"> 8 </option>
+   </select>
+
+    <label>Room Type <i>*</i></label>
+    <select class="form-select" formControlName="roomtype" aria-label="Default select example">
+      <option selected>Room Type Select Here</option>
+      <option value="Standard Single">Standard Single</option>
+      <option value="Standard Double">Standard Double</option>
+      <option value="Premium Single">Premium Single</option>
+      <option value="Silver Double">Silver Double</option>
+      <option value="Premium Double">Premium Double</option>
+      <option value="Family Room">Family Room</option>
+      <option value="Suite Room">Suite Room</option>
+      <option value="Deluxe Room">Deluxe Room</option>
+    </select>
+
+    <p>&nbsp;</p>
+    
+    <button type="submit" class="btn btn-success"> Submit </button>
+    <small [ngClass]="{ 'error-text': msg === 'error', 'success-text': msg === 'success' }"> {{msg}} </small>
+
+    </form>
+    
+</div> 
+
+</div> 
+
+</div>
+
+</div>
+
+
+</div>
+

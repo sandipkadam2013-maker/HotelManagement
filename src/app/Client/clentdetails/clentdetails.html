@@ -1,0 +1,227 @@
+ 
+ <div class="container-fluid" style="margin-top: 4rem;">
+    <div class="billing-wrapper">
+       <h5> Hotel Billing Form</h5>
+
+  <table class="table table-bordered">
+
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Roomtype</th>
+      <th>Check-in</th>
+      <th>Check-out</th>
+      <th style="text-align: center;">Action</th>
+      <th>Paid Bill</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let item of bookings">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.roomtype}}</td>
+      <td>{{ item.checkin }}</td>
+      <td>{{ item.checkout }}</td>
+      <td style="text-align: center;">
+        <button type="button" class="btn btn-sm btn-primary btn-sm" (click)="selectBooking(item)" data-bs-toggle="modal" data-bs-target="#myModal">
+         Checkout & Pay Bill
+        </button> &nbsp;&nbsp;
+        <button type="button" class="btn btn-sm btn-primary btn-sm" (click)="invoice(item.id)" data-bs-toggle="modal" data-bs-target="#invoice">
+              Generate Bill
+        </button>
+      </td>
+
+ <td> 
+     
+  <span class="badge bg-success" *ngIf="billMap[item.id]?.totalamount > 0">Paid</span>
+  <span class="badge bg-danger" *ngIf="billMap[item.id]?.totalamount! == null">Unpaid</span>
+</td>
+
+  
+    </tr>       
+
+  </tbody>
+
+</table>
+
+ </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">  
+         <p> Please fill out the form to generate your hotel bill. </p>
+        </h4>
+        <button type="button" class="btn-sm" data-bs-dismiss="modal"> X </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form [formGroup]="roombilling" (ngSubmit)="onsubmit()">
+            <!---------------------------------------------------------------------------->
+   
+            <label> ID </label>
+            <input type="number" name="id" formControlName="id" class="form-control"/>   
+                 
+            <!---------------------------------------------------------------------------->
+
+            <label> Guest Full Name </label>
+            <input type="text" name="name" formControlName="name" class="form-control"/>
+
+            <!---------------------------------------------------------------------------->
+
+            <label>Address </label>
+            <input type="text" name="address" formControlName="address" class="form-control"/>
+       <!----------------------------------------------------------------------------->
+
+            <label> Room Number </label>
+            <input type="number" name="number" formControlName="number" class="form-control"/>
+
+         <!----------------------------------------------------------------------------->
+
+            <label>Room Type </label>
+            <input type="text" name="roomtype" formControlName="roomtype" class="form-control"/>
+
+            <!-----------------------------------------------------------------------------> 
+
+            <label> Check-in Date </label>
+            <input type="text" name="checkin" formControlName="checkin" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Check-out Date </label>
+            <input type="text" name="checkout" formControlName="checkout" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Number of Nights * </label>
+            <input type="number" name="nights" formControlName="nights" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Room Rate per Night ($) * </label>
+            <input type="number" name="ratepernight" formControlName="ratepernight" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Additional Charges ($) </label>
+            <input type="number" name="addcharges" formControlName="addcharges" class="form-control"/>
+            
+            <!----------------------------------------------------------------------------->
+            <label> Total Amount ($) </label>
+            <input type="number" name="totalamount" formControlName="totalamount" class="form-control"/>
+            <br/>
+        {{msg}}
+            <!----------------------------------------------------------------------------->
+        <!-- Modal footer -->
+      <div class="modal-footer">
+         <button class="btn btn-primary btn-sm" type="submit"> Submit </button>  &nbsp;&nbsp;
+          <button class="btn btn-primary btn-sm btn-warning" type="reset"> Reset </button> &nbsp;&nbsp;  
+           <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
+      </div> 
+  </form>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="invoice">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+
+        <h4 class="modal-title">  
+        The Great Royal Villas  
+        </h4> 
+
+     <span style="display: block; width:50%; font-size: 14px;"> </span>
+        <p>SPA  Restorent & Hotel Invoice</p>
+        <button type="button" class="btn-sm" data-bs-dismiss="modal"> X </button>
+
+      </div>
+
+<!---------------------------------------Modal body ----------------------------------------------------->
+
+      <div class="modal-body">
+        <div class="invoice">
+
+         <div class="row">
+        <div class="col-md-12">
+
+              
+   <div class="row">
+          <div class="col-md-6">    
+            <div class="invoice-subsection">
+                <p><strong>id</strong> {{ selectedInvoice?.id }}</p>
+                <p><strong>Name:</strong> {{ selectedInvoice?.name }}</p>
+                
+            </div>
+          </div>
+          <div class="col-md-6"> 
+             <div class="invoice-subsection">
+                
+              <p><strong>Bill Date:</strong> {{ selectedInvoice?.invoicedate }}</p>
+            </div>
+          </div>   
+    </div>
+    <div style="width: 100%; height: 35px; display: block;"></div>
+      <div class="row">
+          <div class="col-md-12"> 
+           <div class="">
+              
+<table class="table table-bordered invoice-subsection">
+
+  <thead>
+    <tr>
+      <th> Invoice Id </th>
+      <th> Room Type </th>
+      <th> Client Name </th>
+      <th> Room Tarrif - </th>  
+       <th> Other Charges </th>
+      <th> Check-out </th>
+      <th> Total Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ selectedInvoice?.id }}</td>
+      <td>{{selectedInvoice?.roomtype}}</td>
+      <td>{{ selectedInvoice?.name }}</td>
+      <td>{{selectedInvoice?.ratepernight }}</td> 
+      <td>{{selectedInvoice?.addcharges }}</td>
+      <td>{{selectedInvoice?.checkout }}</td>
+      <td> {{selectedInvoice?.totalamount}}</td>
+    </tr>       
+
+  </tbody>
+
+</table>
+
+
+  <!-- {{msg}}{{selectedInvoice?.id}} -->
+
+</div>   
+         </div>   
+       </div>
+    </div>
+       </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

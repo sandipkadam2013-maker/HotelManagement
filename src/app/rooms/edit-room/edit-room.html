@@ -1,0 +1,38 @@
+
+<div class="editwrapper"> 
+
+  <div class="bookingEdit"> 
+<form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+
+          <input formControlName="id" class="form-control"  name="id" placeholder="id">
+            <input formControlName="name" class="form-control" name="name" placeholder="Name">
+            <select class="form-select" formControlName="roomtype" class="form-control" name="roomtype" aria-label="Default select example">
+              <option value="roomtype" *ngFor="let item of bookings"> 
+                  {{ item.roomtype }} 
+              </option>
+              <option value="Standard Single">Standard Single</option>
+              <option value="Standard Double">Standard Double</option>
+              <option value="Premium Single">Premium Single</option>
+              <option value="Silver Double">Silver Double</option>
+              <option value="Premium Double">Premium Double</option>
+              <option value="Family Room">Family Room</option>
+              <option value="Suite Room">Suite Room</option>
+              <option value="Deluxe Room">Deluxe Room</option>
+          </select>
+           <input formControlName="number" class="form-control" name="number" placeholder="Persons" isdisabled>
+            <div class="btn-grp"> 
+           <input formControlName="address" class="form-control" name="address" placeholder="Address">
+            <button type="reset" class="btn btn-warning btn-sm" (click)="enableedit()"> Edit </button> &nbsp;&nbsp; 
+            <button type="button" class="btn btn-secondary btn-sm" (click)="cancelEdit()"> cancel </button>
+            &nbsp;&nbsp;  <button type="submit" class="btn btn-primary btn-sm">Update</button>
+
+            <span> {{errormsg}}</span>
+             
+        </div>
+</form>
+</div>
+
+<p *ngIf="successMsg" style="color: green;">
+  {{ successMsg }}
+</p>
+</div>

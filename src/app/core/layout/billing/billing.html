@@ -1,0 +1,74 @@
+ 
+ <div class="container-fluid">
+       <h5> Hotel Billing Form</h5>
+       <p> Please fill out the form to generate your hotel bill. </p>
+    <div class="billing-wrapper">
+
+ <div *ngFor="let item of bookings">
+     <p>
+      Booking ID: {{ item.id }} |
+      Guest: {{ item.name }}
+      <button type="button" (click)="selectBooking(item)">
+            Generate Bill
+      </button>
+  </p>
+</div>
+
+    <form [formGroup]="roombilling" (ngSubmit)="onsubmit()">
+            <!---------------------------------------------------------------------------->
+   
+                  <label> ID </label>
+                  <input type="hidden" name="id" formControlName="id" class="form-control"/>   
+                 
+            <!---------------------------------------------------------------------------->
+
+            <label> Guest Full Name </label>
+            <input type="text" name="name" formControlName="name" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Room Number </label>
+            <input type="number" name="number" formControlName="number" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Check-in Date </label>
+            <input type="date" name="checkin" formControlName="checkin" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Check-out Date </label>
+            <input type="date" name="checkout" formControlName="checkout" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Number of Nights </label>
+            <input type="number" name="nights" formControlName="nights" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Room Rate per Night ($) </label>
+            <input type="number" name="ratepernight" formControlName="ratepernight" class="form-control"/>
+
+            <!----------------------------------------------------------------------------->
+
+            <label> Additional Charges ($) </label>
+            <input type="number" name="addcharges" formControlName="addcharges" class="form-control"/>
+            
+            <!----------------------------------------------------------------------------->
+            <label> Total Amount ($) </label>
+            <input type="number" name="totalamount" formControlName="totalamount" class="form-control"/>
+            <br/>
+            <!----------------------------------------------------------------------------->
+                  <button class="btn btn-primary btn-sm" type="submit"> Submit </button>  &nbsp;&nbsp;
+                   <button class="btn btn-primary btn-sm" type="reset"> Reset </button>
+            <!----------------------------------------------------------------------------->  
+
+    </form>
+
+  
+     
+ </div>
+</div>
+
+

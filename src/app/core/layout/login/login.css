@@ -1,0 +1,108 @@
+/* Animated gradient background */
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff416c, #ff4b2b);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  height: 100vh;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.login-container {
+  height: 100vh;
+}
+
+/* Glassmorphism card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  color: #171616 !important;
+  animation: fadeIn 1s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating label input */
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.4);
+  color: #292626 !important;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #fff;
+  box-shadow: none;
+  background: transparent;
+  color: #000 !important;
+}
+
+label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: rgba(255,255,255,0.7) !important;
+  pointer-events: none;
+  transition: 0.3s;
+  color:#171616 !important;
+}
+
+/* Floating effect */
+.form-control:focus + label,
+.form-control:valid + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  background: rgba(0,0,0,0.3);
+  padding: 0 6px;
+  border-radius: 5px;
+  color:#171616 !important;
+}
+
+/* Login button animation */
+.btn-login {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff !important;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Link style */
+a {
+
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

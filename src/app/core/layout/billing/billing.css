@@ -1,0 +1,12 @@
+.billing-wrapper{
+    margin: 0 auto;
+    width: 650px;
+    border:1px solid #fdfdfd;
+ }
+.billing-wrapper{
+   padding: 80px;
+    margin-top: 7rem;
+}
+label{
+    margin-top: 0.8rem;
+}

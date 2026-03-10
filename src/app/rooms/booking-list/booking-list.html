@@ -1,0 +1,86 @@
+
+   <app-banner-slider></app-banner-slider>
+  
+
+ <div class="titlename mt-5"> 
+    <H5> {{tittle}}</H5>
+</div>
+
+   <div *ngIf="!loading">
+      <div class="container-fluid"> 
+        <div class="row" > 
+         <div class="col-md-4" *ngFor="let item of bookings">
+
+        <div class="booking_wrapper">
+           <div class="booking_content"> 
+  <button type="button" class="btnclose" data-bs-toggle="modal" data-bs-target="#myModal" (click)="openModal(item.id)">
+    X
+  </button>
+<button type="button" (click)="editBooking(item.id)" class="btn btn-outline-info btn-sm edit"> Edit </button>
+<small class="id-name"> Booking ID :- {{item.id}} </small>
+             <p class="title-name client_name" style=" white-space: nowrap;
+  overflow: hidden;       
+  text-overflow: ellipsis;"> Person Name :-  {{item.name}} </p>
+             <p class="id-name"> Room Type :-  
+           <span class="room-flag"
+        [ngClass]="{
+         'suite': item.roomtype === 'Suite Room',
+          'standardsingle': item.roomtype === 'Standard Single',
+          'standard': item.roomtype === 'Standard Double',
+          'premiumsingle': item.roomtype === 'Premium Single',
+          'silver': item.roomtype === 'Silver Double',
+          'premium': item.roomtype === 'Premium Double',
+          'family': item.roomtype === 'Family Room',
+          'deluxe': item.roomtype === 'Deluxe Room',
+        }">
+                {{item.roomtype}} </span> </p>
+
+                 <p class="number-title">Check In :- {{item.checkin}} </p>
+                 <p class="number-title">Check Out :- {{item.checkout}} </p>
+             <p class="number-title">Persons To Stay :- {{item.number}} </p>
+             <p class="number-title">Address :- {{item.address}} </p>
+          
+        </div>
+
+        </div>    
+    
+</div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">  Delete {{selectedBookingId}} ?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+          <span>  Are you sure you want to Delete Booking No. {{selectedBookingId}} .  </span>
+    </div>
+<!-- Modal footer -->
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-danger btn-sm" (click)="bookingdelete(selectedBookingId)"> Delete</button>  
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal" (click)="confirm()"> Cancel </button>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="cnetrtextalign"> 
+   <small>{{msg}} </small>
+ </div>
+
+<div *ngIf="loading" class="loader-container text-center">
+  <div class="loader"></div>
+  
+</div>
+

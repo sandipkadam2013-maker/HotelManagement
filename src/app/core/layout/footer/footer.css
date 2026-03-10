@@ -1,0 +1,84 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  margin-top:4rem;
+  color: #666666;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+}
+.footer{
+  background-image: url("/assets/img/footer-bg.jpg") !important;
+  background-repeat: no-repeat !important;
+}
+/* Titles */
+.footer-title{
+    margin-bottom:15px;
+    font-weight:600;
+    font-size:25px;
+    line-height:24px;
+    text-align:left;
+    color: #fff;
+    margin-bottom:15px;
+    border-bottom: #00998c solid 3px;
+    padding-bottom:3px;
+    display:table;
+}
+
+.col-md-3{
+     padding:0 !important;
+ }
+
+/* Links */
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffc107;
+  padding-left: 6px;
+}
+
+/* Animations */
+.animate-fade {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.animate-slide {
+  animation: slideUp 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}

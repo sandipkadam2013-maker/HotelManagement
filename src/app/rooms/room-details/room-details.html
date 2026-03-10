@@ -1,0 +1,21 @@
+<div class="pagesize">
+<div class="container-fluid">
+ <h5>OUR ROOM</h5>
+    <h3> Explore Our Hotel </h3>
+  <div class="row">
+  <div class="col-md-3" *ngFor="let item of rooms">    
+
+   <div class="box-wrapper">  
+      <img [src]="item.image" width="100%" alt="room image" />
+      <p class="title_top">{{ item.Title }}</p>
+      <p>{{ item.description }}</p>
+      <p class="pricing">{{ item.price }}</p>
+    <div class="btnwrapper">
+        <button class="btn btn-primary btn-sm" (click)="booknow()"> Book Now</button>
+        <button class="btn btn-primary btn-sm"> Available </button>
+    </div>
+  </div> 
+</div>
+</div>
+</div>
+ </div> 

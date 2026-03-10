@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+    .navbar-nav .nav-link{
+        font-family: Aeonik Overview, Arial, sans-serif !important;
+        font-size: 16px !important;
+        text-transform: capitalize !important;
+    }
+    button:hover{background-image :linear-gradient(225deg, #085d56, #00998c) !important;}
+    tbody, td, tfoot, th, thead,tr{
+     border: 1px solid #00998c !important;
+   }
+.form-control{ border: 1px solid #00998c !important;}
+.form-control:focus{box-shadow: 0 0 0 0.25rem rgba(0, 153, 140, 0.35) !important;}
+.modal-header { border-bottom: 1px solid #00998c !important; }
+.btn.btn-primary{
+    color: #fff !important;
+    background-image: linear-gradient(135deg, #085d56, #00998c) !important;
+}
+
+ .btn.btn-primary:hover{background-image :linear-gradient(225deg, #085d56, #00998c) !important;}
+ 
+.box-wrapper{box-shadow: 89.135px 76.587px 32.885px 0 rgba(0, 0, 0, 0.00), 57.115px 49.327px 30.288px 0 rgba(0, 0, 0, 0.01), 32.019px 27.692px 25.529px 0 rgba(0, 0, 0, 0.05), 14.279px 12.115px 18.606px 0 rgba(0, 0, 0, 0.08), 3.462px 3.029px 10.385px 0 rgba(0, 0, 0, 0.09);}
+.box-wrapper{
+    padding:0px !important;
+    padding-bottom:10px !important;
+    border: 1px solid #11998e;
+ }
+.booking_wrapper{
+  border: 1px solid #00998c !important;
+}
+.table > thead {
+    vertical-align: bottom;
+    height: 35px !important;
+}

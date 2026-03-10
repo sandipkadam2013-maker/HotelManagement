@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+     "email": "bob@example.com",
+      "imageUrl": "assets/img/room1.jpg"
+    },
+    {
+   "email": "praiyanka@example.com",
+      "imageUrl":"./assets/img/room1.jpg"
+    },
+    {
+     "email": "shlok@example.com",
+      "imageUrl": "./assets/img/room1.jpg"
+    },
+    {
+    "email": "bob@example.com",
+      "imageUrl": "./assets/img/room1.jpg"
+    },
+    {
+     "email": "gaurav@example.com",
+      "imageUrl": "./assets/img/room1.jpg"
+    },
+    {
+    "email": "devansh@example.com",
+      "imageUrl":"./assets/img/room1.jpg"
+    },
+    {
+     "email": "sunita@example.com",
+      "imageUrl": "./assets/img/room1.jpg"
+    }
+  ]
+}

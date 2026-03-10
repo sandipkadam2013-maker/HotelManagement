@@ -1,0 +1,20 @@
+{
+  "bookedroom": [
+    {
+      "id": 75,
+      "name": "sandip kadam",
+      "address": "adneurgaon tallyeola",
+      "number": "Number Of Person",
+      "roomtype": "1",
+      "profilepic": ""
+    },
+    {
+      "id":7874144,
+      "name": "Harry Peter",
+      "address": "Newyork",
+      "number": "4",
+      "roomtype": "1",
+      "profilepic": "C:\\fakepath\\room2.jpg"
+    }
+  ]
+}
