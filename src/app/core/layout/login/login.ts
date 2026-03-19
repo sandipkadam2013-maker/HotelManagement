@@ -31,7 +31,7 @@ login() {
     const role = this.authservice.getRole();
 
     if (role === 'admin') {
-      this.router.navigate(['/admin']);
+      this.router.navigate(['/roomDetails']);
     } else {
       this.router.navigate(['/roomDetails']);
     }
