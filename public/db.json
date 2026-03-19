@@ -493,6 +493,20 @@
       "nights": 7,
       "invoicedate": "2026-03-06T12:34:30.734Z",
       "totalamount": 32
+    },
+    {
+      "id": null,
+      "name": null,
+      "address": null,
+      "number": null,
+      "roomtype": null,
+      "checkin": null,
+      "checkout": null,
+      "ratepernight": null,
+      "addcharges": null,
+      "nights": null,
+      "invoicedate": "2026-03-19T16:11:34.435Z",
+      "totalamount": 0
     }
   ],
   "users": [

@@ -14,8 +14,8 @@
   <nav class="navbar">
 
   <div class="logo"> 
-
-     <img src="assets/img/logoeas.png" />
+      <!-- <img src="assets/img/logoeas.png" /> -->
+       <h2> StayEase </h2>
   </div>
 
 
@@ -50,6 +50,11 @@
   <!-- ADMIN ONLY -->
   <li *ngIf="auth.getRole() === 'admin'">
     <a routerLink="/addrooms">Add Rooms</a>
+  </li>
+
+   <!-- ADMIN ONLY -->
+  <li *ngIf="auth.getRole() === 'admin'">
+    <a routerLink="/Clentdetails">Clentdetails</a>
   </li>
 
   <li *ngIf="auth.getRole() === 'admin'">

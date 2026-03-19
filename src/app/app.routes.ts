@@ -46,6 +46,12 @@ export const routes: Routes = [
   data: { roles: ['admin'] }
 },
 
+{
+  path: 'Clentdetails',
+  component: Clentdetails,
+  canActivate: [RoleGuard],
+  data: { roles: ['admin'] }
+},
   
   {
   path: 'addrooms',

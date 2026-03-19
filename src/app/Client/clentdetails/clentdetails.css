@@ -52,3 +52,8 @@ button{
     border-radius:4px !important;
 }
 
+.modal-header{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
