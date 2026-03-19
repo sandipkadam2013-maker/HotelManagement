@@ -8,20 +8,38 @@ import { Router } from '@angular/router';
 export class Authservice {
   constructor(private http:HttpClient, private router:Router){}
 
-  login(email: string) {
-    localStorage.setItem('isLoggedIn', 'true');
-    localStorage.setItem('userEmail', email);
+     users = [
+    { email: 'admin@gmail.com', password: '123', role: 'admin' },
+    { email: 'user@gmail.com', password: '123', role: 'user' }
+  ];
+
+  login(data: any) {
+    const user = this.users.find(
+      u => u.email === data.email && u.password === data.password
+    );
+
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+      return true;
+    }
+
+    return false;
+  }
+
+  getUser() {
+    return JSON.parse(localStorage.getItem('user') || '{}');
+  }
+
+  getRole() {
+    return this.getUser()?.role;
+  }
+
+  isLoggedIn() {
+    return !!localStorage.getItem('user');
   }
 
   logout() {
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('userEmail');
-    this.router.navigate(['/login']);
-
-  }
-
-  isLoggedIn(): boolean {
-    return localStorage.getItem('isLoggedIn') === 'true';
+    localStorage.clear();
   }
 
 

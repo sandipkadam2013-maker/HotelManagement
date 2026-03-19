@@ -336,15 +336,6 @@
       "checkout": "2026-03-30T04:07"
     },
     {
-      "id": "101",
-      "name": "JIo Primium",
-      "address": "Pune",
-      "number": "7",
-      "roomtype": "Standard Double",
-      "checkin": "2026-01-31T23:59",
-      "checkout": "2024-12-03T23:59"
-    },
-    {
       "id": "396",
       "name": "Mango Slice pvt Ltd.",
       "address": "GateWay Of India",
@@ -379,6 +370,22 @@
       "roomtype": "Standard Single",
       "checkin": "2026-04-04T04:59",
       "checkout": "2026-12-01T22:59"
+    },
+    {
+      "id": "6b92",
+      "name": "Nancy",
+      "roomtype": "Family Room",
+      "checkin": "2026-01-01",
+      "checkout": "2026-01-01",
+      "email": "nancy@nancy.com"
+    },
+    {
+      "id": "20a0",
+      "name": "Ratan Jamshedh Tata",
+      "roomtype": "Standard Single",
+      "checkin": "2026-12-31",
+      "checkout": "2026-12-31",
+      "email": "Tata@gmail.com"
     }
   ],
   "roomtype": [
@@ -420,7 +427,7 @@
   ],
   "billing": [
     {
-      "id": 7,
+      "id": "7",
       "name": "7",
       "address": "7",
       "number": 4,
@@ -460,7 +467,7 @@
       "totalamount": 9
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "demo",
       "address": "Ghatkoper West Mumbai",
       "number": 5,
@@ -486,6 +493,28 @@
       "nights": 7,
       "invoicedate": "2026-03-06T12:34:30.734Z",
       "totalamount": 32
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+  "contact": [
+    {
+      "id": "27e6",
+      "fullname": "Sandeep Uttam kadam",
+      "email": "Sandipkadam2013@gmail.com",
+      "message": "Hi I am sandip kadam, i ahve + yeras experiance in front development i work with technology HTML5, Bootstrap3,4,5, also jQuery, JavaScript and Angular 20151617,\ni am loooking for freelancing project for the online platform."
     }
   ]
 }

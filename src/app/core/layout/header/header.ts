@@ -1,24 +1,36 @@
 import { Component } from '@angular/core';
 import { Authservice } from '../../../services/authservice';
 import { NgIf } from '@angular/common';
+import { Router, RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-header',
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
 export class Header {
 
-  constructor(private authservice:Authservice){}
+ login(){
+       return this.router.navigate(['login']);
+ }
+
+  constructor(public auth: Authservice, private router:Router){}
+
+
 
   logout(){
-    this.authservice.logout();
+    this.auth.logout();
   }
   
   isLoggedIn(){
-    this.authservice.isLoggedIn();
+    this.auth.isLoggedIn();
   }
 
+   menuOpen = false;
+
+  toggleMenu(){
+    this.menuOpen = !this.menuOpen;
+  }
 
 }

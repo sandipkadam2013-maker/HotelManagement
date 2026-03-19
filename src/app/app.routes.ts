@@ -11,10 +11,15 @@ import { Gallery } from './rooms/gallery/gallery';
 import { Billing } from './core/layout/billing/billing';
 import { Profile } from './Client/profile/profile';
 import { Clentdetails } from './Client/clentdetails/clentdetails';
+import { Hotel } from './core/layout/hotel/hotel';
+import { authGuard } from './guard/auth-guard';
+import { Contact } from './core/layout/contact/contact';
+import { Admin } from './admin/admin';
+import { RoleGuard } from './core/model/role.model';
 
 export const routes: Routes = [
        
-        {  path:'',component:Login} ,
+        {  path:'',component:Hotel} ,
         {  path:'login', component:Login },
         {  path:'header', component:Header },
         {  path:'footer', component:Footer },
@@ -26,7 +31,39 @@ export const routes: Routes = [
         {  path:'Profile', component:Profile },
         {  path:'Clentdetails', component: Clentdetails},
         {  path:'billing', component:Billing },
+        { path:'Contact', component:Contact },
         {  path:'**', component:NotFound },
-        
+//         {
+//   path: 'admin-dashboard',
+//   component: AdminDashboardComponent,
+//   canActivate: [authGuard],
+//   data: { roles: ['admin'] }
+// },
+{
+  path: 'admin',
+  component: Admin,
+  canActivate: [RoleGuard],
+  data: { roles: ['admin'] }
+},
+
+  
+  {
+  path: 'addrooms',
+  component: AddRoom,
+  canActivate: [RoleGuard],
+  data: { role: 'admin' }
+},
+{
+  path: 'bookingList',
+  component: BookingList,
+  canActivate: [RoleGuard],
+  data: { role: 'admin' }
+},
+{
+  path: 'roomDetails',
+  component: RoomDetails,
+  canActivate: [RoleGuard],
+  data: { role: 'user' }
+}
 
 ];

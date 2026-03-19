@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ɵInternalFormsSharedModule, ReactiveFormsModule, FormBuilder, FormGroup, FormControl, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { Authservice } from '../../../services/authservice';
 @Component({
   selector: 'app-login',
   imports: [ReactiveFormsModule],
@@ -10,13 +11,10 @@ import { Router } from '@angular/router';
 export class Login {
  loginform!: FormGroup;
 
-
-constructor(private fb:FormBuilder, private router: Router){ }
+constructor(private fb:FormBuilder, private router: Router, private authservice:Authservice){ }
 
  ngOnInit() {
-
     this.loginform = this.fb.group({
-      
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
 
@@ -25,28 +23,25 @@ constructor(private fb:FormBuilder, private router: Router){ }
     this.login();
   }
    
- login(){
 
+login() {
+  const success = this.authservice.login(this.loginform.value);
 
-   const email = this.loginform.value.email;
-    const password = this.loginform.value.password;
-  
+  if (success) {
+    const role = this.authservice.getRole();
 
-   if (email === 'admin' && password === 'admin123') {
-
-
-      // ✅ Navigate to dashboard
+    if (role === 'admin') {
+      this.router.navigate(['/admin']);
+    } else {
       this.router.navigate(['/roomDetails']);
-    } 
-    
-    else {
-      alert('Invalid credentials');
     }
 
- 
- }
+  } else {
+    alert('Invalid credentials');
+  }
+}
 
- logout(){
+    logout(){
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('userEmail');
     this.router.navigate(['/login']);
@@ -55,3 +50,6 @@ constructor(private fb:FormBuilder, private router: Router){ }
 
 
 }
+
+
+

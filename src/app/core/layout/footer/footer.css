@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   overflow: hidden;
-  margin-top:4rem;
+  margin-top:rem;
   color: #666666;
   font-family: 'Poppins', sans-serif;
   line-height: 1.80857;
@@ -81,4 +81,14 @@
   .footer {
     text-align: center;
   }
+}
+
+
+@media(max-width:760px){
+
+      .footer{
+        text-align: -webkit-left !important;
+        text-align: left !important;
+    }
+
 }

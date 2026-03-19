@@ -6,14 +6,13 @@
     margin: 1rem;
     transition: transform .5s;
     overflow: hidden;
+    padding-bottom: 18px !important;
 }
-
 .box-wrapper img:hover {
     transform: scale(1.1);
     transition: all .3s;
     border-radius: 10px;
 }
-
 .title_top {
     font-weight: 500;
     color: chocolate;
@@ -21,12 +20,10 @@
     font-size: 22px;
     margin-top: 6px;
 }
-
 .pricing {
     color: brown;
     font-weight: 800;
 }
-
 .btn.btn-primary {
     background-image : linear-gradient(135deg, #085d56, #00998c) !important;
     border: 2px solid  #00998c !important;
@@ -34,7 +31,6 @@
     text-align: center;
     transition: all .3s;
 }
-
 /* .btn.btn-primary:hover {
     border: 2px solid #ff6138 !important;
     background: transparent !important;
@@ -48,11 +44,12 @@
     justify-content: space-evenly
 }
 .pagesize{
-   margin-top: 8.5rem;
+    margin-top: 6.5rem;
     display: block;
     text-align: center;
  }
  h3{font-size:44px; color: #19191A; margin: 1.5rem;}
 .h5, h5{ font-size: 15px;color: #e5b81a;}
+
 
 

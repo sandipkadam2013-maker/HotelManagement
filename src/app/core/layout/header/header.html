@@ -1,6 +1,6 @@
 
 
-<header>  
+<header class="headerwrapper">  
    <!-- <div class="header-top">
      <img src="assets/img/logo.png" alt="Logo">
   </div> -->
@@ -9,30 +9,83 @@
 <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
 
-    <a class="navbar-brand" href="#">  <img src="assets/img/logo.png" alt="Logo"> </a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-    
-        <a class="nav-link active" aria-current="page" href="#"> Home </a>
-        <a class="nav-link" href="roomDetails"> roomDetails </a>
-        <a class="nav-link" href="gallery"> Gallary </a>
-        <a class="nav-link" href="addrooms"> Book Your Room </a>
-        <a class="nav-link" href="bookingList"> Booking List </a>
-        
-        <a class="nav-link" href="Clentdetails"> Clentdetails </a>
-
-        <a class="nav-link" href="billing"> Billings </a>
 
 
-        <a class="nav-link" href="#" > <button  (click)="logout()" class="btn btn-primary btn-sm">Logout</button> </a>
-       
-      </div>
-    </div>
+  <nav class="navbar">
+
+  <div class="logo"> 
+
+     <img src="assets/img/logoeas.png" />
+  </div>
+
+
+  
+
+      <!-- <ul class="nav-links" [class.active]="menuOpen">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/roomDetails">Rooms</a></li>
+        <li><a routerLink="/booking">Booking</a></li>
+        <li><a routerLink="/Contact">Contact</a></li>
+        <li><a routerLink="/addrooms">Book Room</a></li>
+        <li><a routerLink="/bookingList">BookingList</a></li>
+        <li><a routerLink="/roomDetails">RoomDetails</a></li>
+        <li><a class="nav-link" href="#" > <button  (click)="logout()" class="btn btn-primary btn-sm">Logout</button> </a></li>
+        <li><a class="nav-link" href="#" > <button  (click)="login()" class="btn btn-primary btn-sm">Login</button> </a></li>
+      </ul> -->
+
+  
+
+      <ul class="nav-links" [class.active]="menuOpen">
+
+  <!-- COMMON -->
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/roomDetails">Rooms</a></li>
+  <li><a routerLink="/Contact">Contact</a></li>
+
+  <!-- USER ONLY -->
+  <li *ngIf="auth.getRole() === 'user'">
+    <a routerLink="/addrooms">Book Your Room</a>
+  </li>
+
+  <!-- ADMIN ONLY -->
+  <li *ngIf="auth.getRole() === 'admin'">
+    <a routerLink="/addrooms">Add Rooms</a>
+  </li>
+
+  <li *ngIf="auth.getRole() === 'admin'">
+    <a routerLink="/bookingList">Booking List</a>
+  </li>
+  
+
+   <li>
+    <span *ngIf="auth.isLoggedIn()" style="color: #ff6600;">
+         Welcome, {{ auth.getUser()?.email }}
+  </span>
+  </li>
+
+  <!-- LOGIN / LOGOUT -->
+  <li *ngIf="!auth.isLoggedIn()">
+    <button (click)="login()" class="btn btn-primary btn-sm">Login</button>
+  </li>
+
+  <li *ngIf="auth.isLoggedIn()">
+    <button (click)="logout()" class="btn btn-danger btn-sm">Logout</button>
+  </li>
+ 
+
+</ul>
+  
+  
+  
+  <div class="hamburger" (click)="toggleMenu()">
+    ☰
   </div>
 </nav>
+
+
+
+
+</div>
+</nav>
+
    </header>
