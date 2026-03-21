@@ -1,41 +1,16 @@
 
 
 <header class="headerwrapper">  
-   <!-- <div class="header-top">
-     <img src="assets/img/logo.png" alt="Logo">
-  </div> -->
- 
-
 <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
-
-
 
   <nav class="navbar">
 
   <div class="logo"> 
-      <!-- <img src="assets/img/logoeas.png" /> -->
        <h2> StayEase </h2>
   </div>
 
-
-  
-
-      <!-- <ul class="nav-links" [class.active]="menuOpen">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/roomDetails">Rooms</a></li>
-        <li><a routerLink="/booking">Booking</a></li>
-        <li><a routerLink="/Contact">Contact</a></li>
-        <li><a routerLink="/addrooms">Book Room</a></li>
-        <li><a routerLink="/bookingList">BookingList</a></li>
-        <li><a routerLink="/roomDetails">RoomDetails</a></li>
-        <li><a class="nav-link" href="#" > <button  (click)="logout()" class="btn btn-primary btn-sm">Logout</button> </a></li>
-        <li><a class="nav-link" href="#" > <button  (click)="login()" class="btn btn-primary btn-sm">Login</button> </a></li>
-      </ul> -->
-
-  
-
-      <ul class="nav-links" [class.active]="menuOpen">
+  <ul class="nav-links" [class.active]="menuOpen">
 
   <!-- COMMON -->
   <li><a routerLink="/">Home</a></li>
@@ -61,7 +36,6 @@
     <a routerLink="/bookingList">Booking List</a>
   </li>
   
-
    <li>
     <span *ngIf="auth.isLoggedIn()" style="color: #ff6600;">
          Welcome, {{ auth.getUser()?.email }}
@@ -80,17 +54,11 @@
 
 </ul>
   
-  
-  
   <div class="hamburger" (click)="toggleMenu()">
-    ☰
-  </div>
+      ☰
+    </div>
 </nav>
-
-
-
-
 </div>
 </nav>
 
-   </header>
+</header>

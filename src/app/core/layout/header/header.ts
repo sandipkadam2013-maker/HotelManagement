@@ -17,8 +17,6 @@ export class Header {
 
   constructor(public auth: Authservice, private router:Router){}
 
-
-
   logout(){
     this.auth.logout();
   }

@@ -38,6 +38,14 @@
 
 /* Mobile */
 
+
+@media (max-width: 844px){
+      .nav-links.active{
+         display: flex !important;
+      }
+}
+
+
 @media(max-width:768px){
   .nav-links{
     position:absolute;
@@ -57,6 +65,14 @@
   .hamburger{
     display:block;
   }
+}
+
+
+
+@media(max-width:650px){
+
+  /* .navbar{display: none;} */
+
 }
 .headerwrapper{
     position: fixed !important;

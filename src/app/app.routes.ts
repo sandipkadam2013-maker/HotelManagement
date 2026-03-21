@@ -33,13 +33,7 @@ export const routes: Routes = [
         {  path:'billing', component:Billing },
         { path:'Contact', component:Contact },
         {  path:'**', component:NotFound },
-//         {
-//   path: 'admin-dashboard',
-//   component: AdminDashboardComponent,
-//   canActivate: [authGuard],
-//   data: { roles: ['admin'] }
-// },
-{
+ {
   path: 'admin',
   component: Admin,
   canActivate: [RoleGuard],
@@ -53,7 +47,7 @@ export const routes: Routes = [
   data: { roles: ['admin'] }
 },
   
-  {
+{
   path: 'addrooms',
   component: AddRoom,
   canActivate: [RoleGuard],
