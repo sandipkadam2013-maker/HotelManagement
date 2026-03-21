@@ -1,3 +1,9 @@
 .contact_wrapper{ margin-top: 6rem; margin: 0 auto; width: 60%;}
 .form-control{margin-bottom: 0.4rem;}
 .btn-wrapper{ width: 100%; display: flex; margin-top: 0.3rem;}
+@media(max-width:650px){
+     .contact_wrapper{
+        width: 100% !important;
+     }
+
+}
